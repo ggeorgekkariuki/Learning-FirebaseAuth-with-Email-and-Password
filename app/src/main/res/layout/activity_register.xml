@@ -39,7 +39,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvApplicationName" />
 
     <EditText
-        android:id="@+id/textViewFullName"
+        android:id="@+id/editTextFullName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -73,9 +73,9 @@
         android:textColor="#FFEB3B"
         android:textColorHint="#FFFFFF"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/textViewFullName"
-        app:layout_constraintStart_toStartOf="@+id/textViewFullName"
-        app:layout_constraintTop_toBottomOf="@+id/textViewFullName" />
+        app:layout_constraintEnd_toEndOf="@+id/editTextFullName"
+        app:layout_constraintStart_toStartOf="@+id/editTextFullName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFullName" />
 
     <EditText
         android:id="@+id/editTextPassword"
@@ -140,4 +140,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonRegister" />
+
+    <ProgressBar
+        android:id="@+id/progressBarRegister"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLogin" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
