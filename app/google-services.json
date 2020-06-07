@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "614315487515",
+    "firebase_url": "https://bush-fire-retailers.firebaseio.com",
+    "project_id": "bush-fire-retailers",
+    "storage_bucket": "bush-fire-retailers.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:614315487515:android:60f03026427fdb6fa5e3be",
+        "android_client_info": {
+          "package_name": "com.example.authenticationapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "614315487515-s92dmvdvfg3hnk7q8uguhghj5hmera24.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCx6KmPvnkC98Gcj4O8X8rVytqDQCgd-TY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "614315487515-s92dmvdvfg3hnk7q8uguhghj5hmera24.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
