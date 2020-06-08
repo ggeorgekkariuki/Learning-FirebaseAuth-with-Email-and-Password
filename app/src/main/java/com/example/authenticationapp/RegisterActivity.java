@@ -37,7 +37,7 @@ public class RegisterActivity extends AppCompatActivity {
         mPhoneNumber = findViewById(R.id.editTextPhoneNumber);
         mPassword = findViewById(R.id.editTextPassword);
         mRegisterButton = findViewById(R.id.buttonRegister);
-        mLogin = findViewById(R.id.textViewLogin);
+        mLogin = findViewById(R.id.textViewRegister);
         mProgressBar = findViewById(R.id.progressBarRegister);
 
 //        Create a Firebase instance
@@ -85,9 +85,18 @@ public class RegisterActivity extends AppCompatActivity {
                         } else{
                             Toast.makeText(RegisterActivity.this, "Error! "+
                                     task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                            mProgressBar.setVisibility(View.GONE);
                         }
                     }
                 });
+            }
+        });
+
+//        Set up on click listener to the text view
+        mLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
             }
         });
     }
